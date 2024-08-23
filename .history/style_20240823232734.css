@@ -1,24 +1,7 @@
-:root {
-  --000: #f0fbfa;
-  --100: #d8f5f5;
-  --200: #b5eaec;
-  --300: #63cfd5;
-  --400: #48bfc8;
-  --500: #2da2ad;
-  --600: #288492;
-  --700: #266b78;
-  --800: #275963;
-  --900: #254a54;
-  --950: #133039;
-}
-
 html {
   font-size: 10px;
   background: url('./background2.jpg') bottom center;
-  background-color: var(--600);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
   user-select: none;
@@ -30,21 +13,17 @@ html {
   padding: 0;
   font-family: sans-serif;
 }
-
-h1 {
-  padding-inline: 2rem;
+header {
+  padding: 2rem;
   text-align: center;
   color: white;
-  background-image: linear-gradient(135deg, var(--100) 0%, var(--300) 100%);
+  background-image: linear-gradient(120deg, #064fc5 0%, #f109e9 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 6rem;
-  text-shadow: 1px 1px 2px #133039;
-  text-wrap: balance;
+  font-size: 3rem;
 }
-
 main {
   place-self: center;
   display: grid;
@@ -65,7 +44,7 @@ main {
 }
 
 .key {
-  border: .4rem solid var(--950);
+  border: .4rem solid black;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -73,18 +52,13 @@ main {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: var(--100);
-
-  filter: drop-shadow(0 0 .5rem var(--300));
-  text-shadow: 0 0 .5rem var(--950);
-  background: #01010199;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
 }
-
 @media screen and (min-width: 1000px) {
   .keys {
-    grid-template-columns: repeat(4, 1fr);
-
-    /* Wrap into 2 columns on large screens */
+    grid-template-columns: repeat(4, 1fr); /* Wrap into 2 columns on large screens */
     .key[data-key="87"] {
       place-content: center;
       grid-column: 4;
@@ -97,26 +71,20 @@ main {
 
 @media screen and (max-width: 800px) {
   .keys {
-    grid-template-columns: repeat(3, 1fr);
-    /* Wrap into 3 columns on medium screens */
+    grid-template-columns: repeat(3, 1fr); /* Wrap into 3 columns on medium screens */
   }
 
 }
 
 @media screen and (max-width: 600px) {
   .keys {
-    grid-template-columns: repeat(2, 1fr);
-    /* Wrap into 2 columns on small screens */
+    grid-template-columns: repeat(2, 1fr); /* Wrap into 2 columns on small screens */
   }
 }
 
 @media screen and (max-width: 400px) {
   .keys {
-    grid-template-columns: 1fr;
-    /* Wrap into 1 column on very small screens */
-  }
-  header{
-    font-size: 3rem;
+    grid-template-columns: 1fr; /* Wrap into 1 column on very small screens */
   }
 }
 
@@ -128,8 +96,8 @@ main {
 
 .playing {
   transform: scale(1.1);
-  border-color: var(--400);
-  box-shadow: 0 0px 1git 4px 0px var(--300);
+  border-color: #ff00e1;
+  box-shadow: 0 0px 1git 4px 0px#ff00e1;
 }
 
 kbd {
@@ -141,5 +109,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: var(--300);
+  color: #ff00e1;
 }

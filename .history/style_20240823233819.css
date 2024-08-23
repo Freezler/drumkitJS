@@ -17,8 +17,6 @@ html {
   background: url('./background2.jpg') bottom center;
   background-color: var(--600);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
   user-select: none;
@@ -35,7 +33,7 @@ h1 {
   padding-inline: 2rem;
   text-align: center;
   color: white;
-  background-image: linear-gradient(135deg, var(--100) 0%, var(--300) 100%);
+  background-image: linear-gradient(135deg, var(--200) 0%, var(--950) 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -65,7 +63,7 @@ main {
 }
 
 .key {
-  border: .4rem solid var(--950);
+  border: .4rem solid black;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -73,11 +71,9 @@ main {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: var(--100);
-
-  filter: drop-shadow(0 0 .5rem var(--300));
-  text-shadow: 0 0 .5rem var(--950);
-  background: #01010199;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
 }
 
 @media screen and (min-width: 1000px) {
@@ -113,10 +109,8 @@ main {
 @media screen and (max-width: 400px) {
   .keys {
     grid-template-columns: 1fr;
+    font-size: 4rem;
     /* Wrap into 1 column on very small screens */
-  }
-  header{
-    font-size: 3rem;
   }
 }
 
@@ -128,8 +122,8 @@ main {
 
 .playing {
   transform: scale(1.1);
-  border-color: var(--400);
-  box-shadow: 0 0px 1git 4px 0px var(--300);
+  border-color: #ff00e1;
+  box-shadow: 0 0px 1git 4px 0px#ff00e1;
 }
 
 kbd {
@@ -141,5 +135,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: var(--300);
+  color: #ff00e1;
 }
