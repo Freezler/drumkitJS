@@ -108,11 +108,6 @@ main {
   .keys {
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 3 columns on medium screens */
-    .key[data-key="87"] {
-      place-content: center;
-      grid-column: 2;
-      grid-row: 5
-    }
   }
 
 }
@@ -144,7 +139,11 @@ main {
   .keys {
     grid-template-columns: 1fr;
 
-
+    .key[data-key="87"] {
+      place-content: center;
+      grid-column: 3;
+      grid-row: 3
+    }
     /* Wrap into 1 column on very small screens */
   }
   header{

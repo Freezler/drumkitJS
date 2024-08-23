@@ -95,7 +95,7 @@ main {
     .key[data-key="75"] {
       place-content: center;
       grid-column: 4;
-      grid-row: 2;
+      grid-row: 3;
     }
 
 
@@ -108,11 +108,6 @@ main {
   .keys {
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 3 columns on medium screens */
-    .key[data-key="87"] {
-      place-content: center;
-      grid-column: 2;
-      grid-row: 5
-    }
   }
 
 }
@@ -121,29 +116,12 @@ main {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 2 columns on small screens */
-
-  }
-  .key[data-key="87"] {
-    place-content: center;
-    grid-column: 2;
-    grid-row: 5
-  }
-  .key[data-key="76"] {
-    place-content: center;
-    grid-column: 2;
-    grid-row: 4;
-  }
-  .key[data-key="75"] {
-    place-content: center;
-    grid-column: 2;
-    grid-row: 3;
   }
 }
 
 @media screen and (max-width: 400px) {
   .keys {
     grid-template-columns: 1fr;
-
 
     /* Wrap into 1 column on very small screens */
   }
@@ -152,7 +130,21 @@ main {
   }
 }
 
-
+.key[data-key="87"] {
+  place-content: center;
+  grid-column: 3;
+  grid-row: 3;
+}
+.key[data-key="76"] {
+  place-content: center;
+  grid-column: 2;
+  grid-row: 3;
+}
+.key[data-key="75"] {
+  place-content: center;
+  grid-column: 2;
+  grid-row: 3;
+}
 
 .playing {
   transform: scale(1.1);
