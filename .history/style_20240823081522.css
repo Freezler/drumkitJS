@@ -87,7 +87,7 @@ main {
 .playing {
   transform: scale(1.1);
   border-color: #ff00e1;
-  box-shadow: 0 0px 14px 0px#ff00e1;
+  box-shadow: 0 12px 1rem #ff00e1;
 }
 
 kbd {
