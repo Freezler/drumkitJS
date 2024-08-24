@@ -42,7 +42,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: clamp(5rem, 5vw, 7rem);
+  font-size: clamp(3.5rem, 5vw, 5rem);
 
 }
 
