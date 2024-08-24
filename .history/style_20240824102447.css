@@ -63,7 +63,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   width: fit-content;
   min-width: 40vw;
-  width: 50vw;
+  width: 80vw;
   text-align: center;
   transition: all 0.03s;
   place-items: center;
