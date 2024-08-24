@@ -151,7 +151,7 @@ main {
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 420px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 1 column on small screens */
