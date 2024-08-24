@@ -99,10 +99,10 @@ main {
   transform-origin: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 columns for mobile phone screens */
+    /* 2 columns for small screens */
     place-items: center;
     justify-content: center;
 

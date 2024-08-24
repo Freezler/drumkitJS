@@ -31,6 +31,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
 }
 
 h1 {
@@ -42,6 +44,7 @@ h1 {
   padding-inline: 3.2rem;
   text-align: center;
   background-image: linear-gradient(90deg, var(--400) 0%, var(--600) 100%);
+
   border-radius: 12px;
   color: transparent;
   background-clip: text;
@@ -86,6 +89,7 @@ main {
   margin: 2rem;
   padding: .25rem .125rem;
   transition: all 0.07s;
+  /* Combined transition properties */
   width: 12rem;
   height: 12rem;
   display: grid;
@@ -99,10 +103,10 @@ main {
   transform-origin: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 columns for mobile phone screens */
+    /* 2 columns for small screens */
     place-items: center;
     justify-content: center;
 
