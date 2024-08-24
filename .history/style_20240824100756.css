@@ -35,8 +35,8 @@ h1 {
   padding-inline: 2rem;
   text-align: center;
   color: white;
-  background-image: linear-gradient(135deg, var(--950) 0%, var(--600) 100%);
-  filter: drop-shadow(0 0 4px var(--200));
+  background-image: linear-gradient(135deg, var(--950) 0%, var(--400) 100%);
+  filter: drop-shadow(0 0 0.5rem var(--500));
   text-shadow: #080d0d 2px 2px 12px 22px;
   color: transparent;
   background-clip: text;
