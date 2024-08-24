@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 10px;
   background: url('./background2.jpg') bottom center;
   background-color: var(--950);
   background-size: cover;
@@ -110,36 +110,21 @@ main {
 
 @media screen and (min-width: 760px) and (max-width: 980px) {
   .keys {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns for medium screens */
-    place-items: center;
     /* Add your specific styles for this screen size range */
-    .key[data-key="87"] {
-      grid-column: 2;
-      grid-row: 4;
-    }
   }
 }
 
 @media screen and (min-width: 980px) {
   .keys {
     grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for large screens */
     place-items: center;
-    .key[data-key="87"] {
-      grid-column: 3;
-      grid-row: 3;
-    }
-
-    .key[data-key="76"] {
-      grid-column: 2;
-      grid-row: 3;
-    }
-
+    height: 100%;
   }
 }
 
 .playing {
-  transform: scale(1.07);
+  transform: scale(1.05);
   transform-origin: center; /* Ensure the element scales from the center */
   border: solid var(--200);
   box-shadow: 0 0 1rem var(--300);
@@ -148,7 +133,7 @@ main {
 
 kbd {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .sound {
@@ -159,5 +144,5 @@ kbd {
   filter: drop-shadow(0 0 24rem var(--100));
   text-shadow: 0 0 1rem var(--900);
   transition: all 0.07s;
-  font-weight: 500;
+  font-weight: 700;
 }

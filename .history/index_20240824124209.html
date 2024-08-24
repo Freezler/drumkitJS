@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
@@ -93,10 +94,10 @@
       key.addEventListener('transitionend', removeTransition);
       key.addEventListener('click', playSound);
     });
-    key.addEventListener('touchstart', function(event) {
-        event.preventDefault();  // Prevent default touch behavior
-        playSound.call(this, event);
-      });
+    key.addEventListener('touchstart', function (event) {
+      event.preventDefault();  // Prevent default touch behavior
+      playSound.call(this, event);
+    });
   </script>
 
 
