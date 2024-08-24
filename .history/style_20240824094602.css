@@ -62,11 +62,12 @@ main {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   min-width: 100%;
-  width: fit-content;
   max-width: 30rem;
-
+  padding: 1rem;
   text-align: center;
   transition: all 0.2s;
+  place-items: center;
+
 
 }
 
@@ -110,7 +111,7 @@ main {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .keys {
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 3 columns on medium screens */
@@ -120,9 +121,10 @@ main {
       grid-row: 5
     }
   }
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 2 columns on small screens */

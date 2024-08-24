@@ -60,13 +60,7 @@ main {
   display: grid;
   grid-row: auto;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  min-width: 100%;
-  width: fit-content;
-  max-width: 30rem;
 
-  text-align: center;
-  transition: all 0.2s;
 
 }
 
@@ -110,7 +104,7 @@ main {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .keys {
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 3 columns on medium screens */
@@ -120,9 +114,10 @@ main {
       grid-row: 5
     }
   }
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 2 columns on small screens */
@@ -145,24 +140,19 @@ main {
   }
 }
 
-@media screen and (max-width: 460px) {
-  .key[data-key="87"] {
-    place-content: center;
-    grid-column: 2;
-    grid-row: 3;
-  }
-  .key[data-key="76"] {
-    place-content: center;
-    grid-column: 3;
-    grid-row: 3;
-  }
-  .key[data-key="75"] {
-    place-content: center;
-    grid-column: 4;
-    grid-row: 2;
+@media screen and (min-width: 460px) {
+  .key {
+    grid-template-columns: 1fr;
+    .key {
+      place-content: center;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    /* Wrap into 1 column on very small screens */
   }
  h1{
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 

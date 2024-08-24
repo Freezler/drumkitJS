@@ -85,7 +85,7 @@ main {
   background: #01010199;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .keys {
     grid-template-columns: repeat(4, 1fr);
     .key[data-key="87"] {
@@ -117,7 +117,7 @@ main {
     .key[data-key="87"] {
       place-content: center;
       grid-column: 2;
-      grid-row: 5
+      grid-row: 4
     }
   }
 }
