@@ -101,14 +101,6 @@ main {
   background: #01010199;
 }
 
-@media screen and (max-width: 720px) {
-  .keys {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
-    place-items: center;
-    justify-content: center;
-  }
-}
-
 @media screen and (max-width: 759px) {
   .keys {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
