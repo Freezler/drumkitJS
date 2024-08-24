@@ -54,9 +54,12 @@ h1 {
   font-size: clamp(6rem, 5vw, 10rem);
   text-shadow:1px 1px 24px var(--950), -1px -1px 1px #133039;
   font-weight: 700;
+
   text-wrap: balance;
   mix-blend-mode: exclusion;
+
   filter: drop-shadow(0 0 1rem var(--300));
+
 }
 
 main {
@@ -102,7 +105,7 @@ main {
   background: #01010199;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 980px) {
   .keys {
     grid-template-columns: repeat(4, 1fr);
     /* Wrap into 3 columns on medium screens */
@@ -119,7 +122,7 @@ main {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
   .keys {
 
@@ -151,7 +154,7 @@ main {
   }
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 560px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 1 column on small screens */

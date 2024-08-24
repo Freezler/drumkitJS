@@ -10,7 +10,6 @@
   --800: #275963;
   --900: #254a54;
   --950: #133039;
-
 }
 
 html {
@@ -31,7 +30,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: sans-serif;
 
 
 }
@@ -44,19 +43,18 @@ h1 {
   padding-block: 1.6rem;
   padding-inline: 3.2rem;
   text-align: center;
-  background-image: linear-gradient(90deg, var(--300) 0%, var(--200) 100%);
-  border: 1px solid var(--950);
+  background-image: linear-gradient(90deg, var(--300) 0%, var(--600) 100%);
+  box-shadow:inset 1px 1px 1px 1px var(--400);
   border-radius:12px;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-size: clamp(6rem, 5vw, 10rem);
-  text-shadow:1px 1px 24px var(--950), -1px -1px 1px #133039;
-  font-weight: 700;
+  backdrop-filter: blur(4px);
+  text-shadow: 0 0 10px var(--900), 0 0 20px var(--300), 0 0 30px var(--300), 0 0 40px var(--300), 0 0 50px var(--300), 0 0 60px var(--300), 0 0 70px var(--300), 0 0 80px var(--300);
   text-wrap: balance;
-  mix-blend-mode: exclusion;
-  filter: drop-shadow(0 0 1rem var(--300));
+
 }
 
 main {
@@ -85,7 +83,6 @@ main {
   border-radius: 2rem;
   margin: 2rem;
   font-size: 8rem;
-
 
   padding: .5rem .250rem;
   transition: all .07s ease;
@@ -116,13 +113,14 @@ main {
       grid-column: 2;
       grid-row: 3;
     }
+
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
   .keys {
-
+    padding: 4.4rem;
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 2 columns on small screens */
     place-items: center;
@@ -151,10 +149,12 @@ main {
   }
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 460px) {
   .keys {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* Wrap into 1 column on small screens */
+
+
   }
 
   .key[data-key="87"] {
@@ -174,23 +174,22 @@ main {
   }
 }
 
-.playing {
-  transform: scale(1.07);
-  border-color: var(--200);
-  box-shadow: 0 0 1rem var(--300);
-  filter: drop-shadow(0 0 .5rem var(--500));
 
+
+.playing {
+  transform: scale(1.1);
+  border-color: var(--400);
+  box-shadow: 0 0px 1git 4px 0px var(--300);
 }
 
 kbd {
   display: block;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .sound {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: var(--500);
-
+  color: var(--300);
 }

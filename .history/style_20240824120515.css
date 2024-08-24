@@ -54,9 +54,12 @@ h1 {
   font-size: clamp(6rem, 5vw, 10rem);
   text-shadow:1px 1px 24px var(--950), -1px -1px 1px #133039;
   font-weight: 700;
+
   text-wrap: balance;
   mix-blend-mode: exclusion;
+
   filter: drop-shadow(0 0 1rem var(--300));
+
 }
 
 main {
@@ -85,7 +88,6 @@ main {
   border-radius: 2rem;
   margin: 2rem;
   font-size: 8rem;
-
 
   padding: .5rem .250rem;
   transition: all .07s ease;
@@ -119,10 +121,10 @@ main {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
   .keys {
-
+    padding: 4.4rem;
     grid-template-columns: repeat(3, 1fr);
     /* Wrap into 2 columns on small screens */
     place-items: center;
@@ -151,7 +153,7 @@ main {
   }
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (min-width: 760px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 1 column on small screens */
