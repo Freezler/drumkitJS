@@ -20,7 +20,7 @@ html {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  max-height: 100vh;
+  height: 100vh;
   user-select: none;
 }
 
@@ -42,8 +42,9 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: calc(3rem + 2vw);
+  font-size: 6rem;
 
+  text-wrap: balance;
 }
 
 main {
@@ -54,47 +55,39 @@ main {
   place-content: center;
   text-align: center;
   width: 100vw;
-  transition: all 0.07s;
+  transition: all 0.2s;
 }
 
 .keys {
   display: grid;
   grid-row: auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-
+  min-width: 80vw;
   width: fit-content;
+  max-width: 30rem;
   text-align: center;
-  transition: all 0.03s;
+  transition: all 0.2s;
   place-items: center;
 
-  .key[data-key="87"] {
-    place-content: center;
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .key {
-    border: .4rem solid var(--950);
-    border-radius: .5rem;
-    margin: 0.2rem;
-    font-size: 1.5rem;
-    padding: .5rem .25rem;
-    transition: all .07s ease;
-    margin: 1rem;
-    width: 10rem;
-    height: 10rem;
-    display: grid;
-    place-items: center;
-    place-content: center;
-    text-align: center;
-    color: var(--100);
-    filter: drop-shadow(0 0 .5rem var(--300));
-    text-shadow: 0 0 .5rem var(--950);
-    background: #01010199;
-  }
 }
 
+.key {
+  border: .4rem solid var(--950);
+  border-radius: .5rem;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+  padding: .5rem .25rem;
+  transition: all .3s ease;
+  width: 10rem;
+  height: 10rem;
+  display: grid;
+  text-align: center;
+  color: var(--100);
+  filter: drop-shadow(0 0 .5rem var(--300));
+  text-shadow: 0 0 .5rem var(--950);
+  background: #01010199;
+}
 
 @media screen and (min-width: 1000px) {
   .keys {

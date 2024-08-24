@@ -62,7 +62,7 @@ main {
   grid-row: auto;
   grid-template-columns: repeat(3, 1fr);
   width: fit-content;
-
+  min-width: 80vw;
   width: fit-content;
   text-align: center;
   transition: all 0.03s;

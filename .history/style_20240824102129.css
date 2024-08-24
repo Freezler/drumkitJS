@@ -43,7 +43,7 @@ h1 {
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-size: calc(3rem + 2vw);
-
+  text-wrap: balance;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
   grid-row: auto;
   grid-template-columns: repeat(3, 1fr);
   width: fit-content;
-
+  min-width: 80vw;
   width: fit-content;
   text-align: center;
   transition: all 0.03s;
