@@ -42,7 +42,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: clamp(6rem, 5vw, 10rem);
+  font-size: 10rem;
 
   text-wrap: balance;
 }
@@ -56,7 +56,6 @@ main {
   text-align: center;
   width: 100vw;
   transition: all 0.07s;
-  padding-bottom: 10rem;
 }
 
 .keys {
@@ -64,8 +63,8 @@ main {
   grid-row: auto;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-
-
+  min-width: 60vw;
+  min-height:80vh;
   width: fit-content;
   text-align: center;
   transition: all 0.03s;
@@ -144,7 +143,7 @@ main {
     width: 100%;
   }
   .keys {
-    padding-bottom: 5rem;
+    padding-block: 10rem;
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 2 columns on small screens */
 

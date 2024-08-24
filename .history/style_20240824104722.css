@@ -42,7 +42,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: clamp(6rem, 5vw, 10rem);
+  font-size: 6rem;
 
   text-wrap: balance;
 }
@@ -56,7 +56,6 @@ main {
   text-align: center;
   width: 100vw;
   transition: all 0.07s;
-  padding-bottom: 10rem;
 }
 
 .keys {
@@ -64,8 +63,8 @@ main {
   grid-row: auto;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-
-
+  min-width: 60vw;
+  min-height: 60vh;
   width: fit-content;
   text-align: center;
   transition: all 0.03s;
@@ -83,12 +82,12 @@ main {
   border: .4rem solid var(--950);
   border-radius: .5rem;
   margin: 2rem;
-  font-size: 48px;
-  padding: .2rem .125rem;
+  font-size: 3rem;
+  padding: .5rem .25rem;
   transition: all .07s ease;
 
-  width: 12rem;
-  height: 12rem;
+  width: 24rem;
+  height: 24rem;
   display: grid;
   place-items: center;
   place-content: center;
@@ -138,13 +137,7 @@ main {
 }
 
 @media screen and (max-width: 720px) {
-  main{
-    margin-top: 10rem;
-    min-height: 80vh;
-    width: 100%;
-  }
   .keys {
-    padding-bottom: 5rem;
     grid-template-columns: repeat(2, 1fr);
     /* Wrap into 2 columns on small screens */
 
