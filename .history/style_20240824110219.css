@@ -34,16 +34,16 @@ html {
 h1 {
   padding-inline: 2rem;
   text-align: center;
-  background-image: linear-gradient(90deg, var(--300) 0%, var(--600) 100%);
-  box-shadow:1px 1px 18px 2px var(--400);
-  border-radius:12px;
+  color: white;
+  background-image: linear-gradient(135deg, var(--300) 0%, var(--950) 100%);
+  filter: drop-shadow(0 0 4px var(--950));
+  text-shadow: #080d0d 2px 2px 22px 2px;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-size: clamp(6rem, 5vw, 10rem);
-  backdrop-filter: blur(4px);
-  -webkit-text-stroke: 0.3px var(--950);
+
   text-wrap: balance;
 }
 

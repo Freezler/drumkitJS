@@ -42,7 +42,7 @@ h1 {
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-size: clamp(6rem, 5vw, 10rem);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   -webkit-text-stroke: 0.3px var(--950);
   text-wrap: balance;
 }
