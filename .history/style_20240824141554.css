@@ -104,7 +104,7 @@ main {
   transform-origin: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .keys {
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns for small screens */
@@ -135,10 +135,12 @@ main {
       grid-column: 3;
       grid-row: 3;
     }
+
     .key[data-key="76"] {
       grid-column: 2;
       grid-row: 3;
     }
+
   }
 }
 
