@@ -60,7 +60,7 @@ main {
   display: grid;
   grid-row: auto;
   grid-template-columns: repeat(2, 1fr);
-  width: fit-content;
+  width: 100%;
   min-width: 80vw;
   width: fit-content;
   max-width: 30rem;

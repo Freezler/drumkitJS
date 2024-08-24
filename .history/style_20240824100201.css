@@ -59,11 +59,12 @@ main {
 .keys {
   display: grid;
   grid-row: auto;
-  grid-template-columns: repeat(2, 1fr);
-  width: fit-content;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   min-width: 80vw;
   width: fit-content;
   max-width: 30rem;
+
   text-align: center;
   transition: all 0.2s;
 
