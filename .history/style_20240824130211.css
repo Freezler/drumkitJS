@@ -16,7 +16,7 @@
 html {
   font-size: 12px;
   background: url('./background2.jpg') bottom center;
-  background-color: var(--950);
+  background-color: #000;
   background-size: cover;
   scroll-behavior: smooth;
   background-attachment: fixed;
@@ -26,6 +26,7 @@ html {
   user-select: none;
   display: grid;
   place-items: center;
+  mix-blend-mode:luminosity;
 }
 
 body,
@@ -38,12 +39,9 @@ html {
 }
 
 h1 {
-  font-size: clamp(4rem, 5vw, 5em);
+  font-size: clamp(4rem, 2vw, 5em);
   font-weight: 400;
   text-align: center;
-  color: var(--000);
-  padding-block: 1.6rem;
-  padding-inline: 3.2rem;
   text-align: center;
   background-image: linear-gradient(90deg, var(--300) 0%, var(--200) 100%);
   border: 1px solid var(--950);
@@ -52,30 +50,17 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 480px) {
-  .keys {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
   font-size: clamp(6rem, 5vw, 10rem);
-  text-shadow: 1px 1px 24px var(--950), -1px -1px 1px #133039;
+  text-shadow: 1px 1px 24px var(--950);
   font-weight: 700;
-  transition: all 0.2s ease;
-  filter: drop-shadow(0 0 48px var(--300));
 }
 
 main {
   place-self: center;
   display: grid;
   place-items: center;
-  height: 100%;
   place-content: center;
   text-align: center;
-  width: 100%;
   transition: all 0.07s;
   padding-bottom: 10rem;
 }
@@ -85,18 +70,17 @@ main {
   grid-template-columns: repeat(2, 1fr);
   /* Default for small screens */
   text-align: center;
-  transition: all 0.03s;
   place-items: center;
 }
 
 .key {
   border-radius: 2rem;
   margin: 2rem;
-  padding: .25rem .125rem;
-  transition: all 0.07s ease;
+transition-behavior: all 0.03s ease-in-out;
+  transition: all 0.03s ease-in-out;
   /* Combined transition properties */
-  width: 16rem;
-  height: 16rem;
+  width: 12rem;
+  height: 12rem;
   display: grid;
   place-items: center;
   place-content: center;

@@ -26,6 +26,7 @@ html {
   user-select: none;
   display: grid;
   place-items: center;
+  mix-blend-mode:luminosity;
 }
 
 body,
@@ -52,20 +53,11 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 480px) {
-  .keys {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
   font-size: clamp(6rem, 5vw, 10rem);
   text-shadow: 1px 1px 24px var(--950), -1px -1px 1px #133039;
   font-weight: 700;
-  transition: all 0.2s ease;
-  filter: drop-shadow(0 0 48px var(--300));
+
+
 }
 
 main {
