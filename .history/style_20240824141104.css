@@ -145,10 +145,11 @@ main {
 }
 
 .playing {
-  transform: scale(1.07);
+  transform: scale(1.02);
   border: solid var(--200);
   box-shadow: 0 0 1rem var(--300);
   filter: drop-shadow(0 0 .5rem var(--500));
+
 }
 
 kbd {

@@ -23,7 +23,6 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   user-select: none;
   display: grid;
   place-items: center;
@@ -79,20 +78,16 @@ main {
   text-align: center;
   transition: all 0.03s;
   place-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
 }
 
 .key {
   border-radius: 2rem;
-  position: relative;
   margin: 2rem;
   padding: .25rem .125rem;
-  transition: all 0.07s;
+  transition: transform 0.1s ease, border 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
   /* Combined transition properties */
-  width: 12rem;
-  height: 12rem;
+  width: 16rem;
+  height: 16rem;
   display: grid;
   place-items: center;
   place-content: center;
@@ -101,7 +96,6 @@ main {
   filter: drop-shadow(0 0 .5rem var(--300));
   text-shadow: 0 0 .5rem var(--950);
   background: #01010199;
-  transform-origin: center;
 }
 
 @media screen and (max-width: 720px) {
@@ -110,7 +104,7 @@ main {
     /* 2 columns for small screens */
     place-items: center;
     justify-content: center;
-
+    height: 100vh;
   }
 }
 
@@ -145,7 +139,7 @@ main {
 }
 
 .playing {
-  transform: scale(1.07);
+  transform: scale(1.05);
   border: solid var(--200);
   box-shadow: 0 0 1rem var(--300);
   filter: drop-shadow(0 0 .5rem var(--500));
